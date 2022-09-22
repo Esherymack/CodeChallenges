@@ -66,8 +66,6 @@ namespace CodeProblems
             }
 
             Console.WriteLine($"The longest palindromic substring is [{string.Join(", ", substringFound)}]");
-            Console.ReadLine();
-
         }
 
     }

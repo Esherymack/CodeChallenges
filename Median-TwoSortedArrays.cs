@@ -93,10 +93,7 @@ namespace CodeProblems
                 median = (double)combined.ElementAt(half_idx);
             }
 
-            //Console.WriteLine($"[{string.Join(", ", combined)}]");
             Console.WriteLine($"The median is {median}.");
-
-            Console.ReadLine();        
         }
     }
 }

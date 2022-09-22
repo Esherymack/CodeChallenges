@@ -27,7 +27,7 @@ namespace CodeProblems
             string input = string.Empty;
             while(input != "-1")
             {
-                Console.Write("Enter a numer (-1 to finish): ");
+                Console.Write("Enter a number (-1 to finish): ");
                 input = Console.ReadLine();
 
                 if(!int.TryParse(input, out int result_inner))
@@ -79,8 +79,6 @@ namespace CodeProblems
             }
 
             Console.WriteLine($"[{Array.IndexOf(nums, result_array[0])}, {Array.IndexOf(nums, result_array[1])}]");
-            Console.ReadLine();
-
         }
     }
 }

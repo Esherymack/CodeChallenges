@@ -18,34 +18,59 @@ namespace CodeProblems
 
             };
 
-            Console.WriteLine("Which module to run?: ");
-            foreach(string s in Modules)
-            {
-                Console.WriteLine($"{Modules.IndexOf(s) + 1}. {s}");
-            }
+            string input = string.Empty;
 
-            int input = int.Parse(Console.ReadLine());
-
-            switch(input)
+            while(input != "exit")
             {
-                case 1:
-                    TwoSum.Instance.Do();
+                if(input == "exit")
+                {
                     break;
-                case 2:
-                    AddTwoNumbers.Instance.Do();
-                    break;
-                case 3:
-                    LongestSubstring.Instance.Do();
-                    break;
-                case 4:
-                    Median_TwoSortedArrays.Instance.Do();
-                    break;
-                case 5:
-                    LongestPalindromicSubstring.Instance.Do();
-                    break;
-                case 6:
-                    ZigzagConversion.Instance.Do();
-                    break;
+                }
+
+                Console.WriteLine("Which module to run?: ");
+                foreach (string s in Modules)
+                {
+                    Console.WriteLine($"{Modules.IndexOf(s) + 1}. {s}");
+                }
+
+                input = Console.ReadLine();
+
+                if(!int.TryParse(input, out int val))
+                {
+                    if(!input.Equals("exit"))
+                    {
+                        Console.WriteLine("Input must be a valid number or 'exit'");
+                    }
+                    else
+                    {
+                        break;
+                    }
+                }
+
+                switch (val)
+                {
+                    case 1:
+                        TwoSum.Instance.Do();
+                        break;
+                    case 2:
+                        AddTwoNumbers.Instance.Do();
+                        break;
+                    case 3:
+                        LongestSubstring.Instance.Do();
+                        break;
+                    case 4:
+                        Median_TwoSortedArrays.Instance.Do();
+                        break;
+                    case 5:
+                        LongestPalindromicSubstring.Instance.Do();
+                        break;
+                    case 6:
+                        ZigzagConversion.Instance.Do();
+                        break;
+                    default:
+                        Console.WriteLine("Invalid input.");
+                        break;
+                }
             }
         }
     }

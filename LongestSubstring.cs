@@ -53,7 +53,6 @@ namespace CodeProblems
             List<char> longestSubstring = subStrings.OrderByDescending(m => m.Count()).First();
 
             Console.WriteLine($"The answer is [{string.Join(", ", longestSubstring)}], with the length of {longestSubstring.Count}.");
-            Console.ReadLine();
         }
     }
 }
