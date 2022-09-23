@@ -15,6 +15,7 @@ namespace CodeProblems
                 "Median_TwoSortedArrays",
                 "LongestPalindromicSubstring",
                 "ZigZagConversion",
+                "ReverseInteger"
 
             };
 
@@ -66,6 +67,9 @@ namespace CodeProblems
                         break;
                     case 6:
                         ZigzagConversion.Instance.Do();
+                        break;
+                    case 7:
+                        ReverseInteger.Instance.Do();
                         break;
                     default:
                         Console.WriteLine("Invalid input.");

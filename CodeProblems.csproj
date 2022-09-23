@@ -49,6 +49,7 @@
     <Compile Include="Median-TwoSortedArrays.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReverseInteger.cs" />
     <Compile Include="TwoSum.cs" />
     <Compile Include="ZigzagConversion.cs" />
   </ItemGroup>
